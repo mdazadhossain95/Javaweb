@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date and week</title>
+
+
+</head>
+
+<body>
+<h1>Date and Day or the week</h1>
+<hr/>
+<script>
+    dateandtime = new Date();
+    day = dateandtime.getDay();
+    document.write(dateandtime);
+
+    current_date = new Date()
+    cday = current_date.getDay();
+    document.write("</br>The day of the week - " + cday)
+
+    var hournow = dateandtime.getHours();
+    var greeting;
+
+    if (hournow >= 0 && hournow <= 6) {
+        greeting = "Good morning"
+    }
+    else if (hournow >= 6 && hournow <= 12) {
+       greeting = "good morning"
+    }
+    else if (hournow >= 13 && hournow < 18) {
+        greeting = "good afternoon"
+
+    }
+    else if (hournow >= 18 && hournow < 24) {
+        greeting = "Good evening"
+    }
+    else {
+        greeting = "welcome!"
+    }
+    document.write("</br>" + greeting)
+</script>
+</body>
+</html>
